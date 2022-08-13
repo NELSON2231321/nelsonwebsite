@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      body{
+         background-color: black;
+         height: 98vh;
+      }
+      img{
+         height: 400px;
+         display: block;
+         margin: auto;
+      }
+      button{
+         display: block;
+         margin: auto;
+         width: 70px;
+         height: 30px;
+         font-weight: bolder;
+      
+      }
+      #forbtn1{
+         margin: 30px;
+      }
+            
+         </style>
+</head>
+<body>
+   <div id="main1">
+
+      <div id="forimage1">
+
+         <!-- image -->
+
+      <img id="image" src="./pictures/off.png" alt="" >
+
+      </div>
+      
+
+
+      <div id="forbtn1">
+
+<!-- button -->
+
+         <button id="btn" >ON</button>
+       
+
+
+      </div>
+      
+         </div>
+
+<script>
+let btn = document.getElementById("btn");
+let image = document.getElementById("image");
+
+btn.addEventListener("click",onoff);
+
+
+function onoff(){
+if(btn.textContent.includes("ON")){
+   
+   image.src="./pictures/on.png"
+   btn.textContent = "OFF"
+}else{
+   image.src="./pictures/off.png"
+   btn.textContent = "ON"
+}
+
+
+
+}
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
+
+
+
+
+   
